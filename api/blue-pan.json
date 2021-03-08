@@ -1,0 +1,11 @@
+
+{
+    "id": "blue-pan",
+    "name": "Blue Pan Pizza",
+    "address": "3930 W 32nd Ave",
+    "phone": "(720)456-7666",
+    "hours":"12pm -9pm",
+    "notes": "The best pizza is the Brooklyn Bridge.",
+    "latitude": "39.762032",
+    "longitude": "-105.038834"
+}

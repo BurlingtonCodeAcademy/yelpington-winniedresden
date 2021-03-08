@@ -1,0 +1,10 @@
+{
+    "id": "pizzeria-locale",
+    "name": "Pizzeria Locale",
+    "address": "3484 W 32nd Ave",
+    "phone": "(303)302-2451",
+    "hours": "11-9pm",
+    "notes": "Really good spicy ranch, tastes good on all pizzas.",
+     "latitude": "39.762048",
+     "longitude": "-105,033284"   
+}

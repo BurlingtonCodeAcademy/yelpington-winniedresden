@@ -1,0 +1,10 @@
+
+{
+    "id": "sexy-pizza",
+    "name": "Sexy Pizza",
+    "address":"2460 Eliot St",
+    "phone": "(303)927-7764",
+    "hours":"11am - 12am",
+    "notes":
+        "Their classic pepperoni is dreamy.",
+}
