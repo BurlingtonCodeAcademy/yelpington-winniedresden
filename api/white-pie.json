@@ -1,0 +1,13 @@
+{
+    "id": "white-pie",
+    "name": "White Pie Pizza",
+    "address": "1702 Humboldt St",
+    "phone": "(303)862-5323", 
+    "hours": [
+        "M 12-9", 
+        "T-S 12-10", 
+        "S 12-9"
+    ], 
+    "notes": 
+        "thin crust, wood fired, artisanal pizzas"
+}

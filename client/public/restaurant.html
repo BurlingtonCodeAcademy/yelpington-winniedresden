@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Restaurant</title>
+</head>
+<body>
+    <h4 id="name">Restaurant name</h4>
+    <h5>Hours:</h5><h5 id="hours">hours</h5>
+    <h4 id="address">Address</h4>
+    <h3 id="phone">phone number</h3>
+    <h3 id="notes">Notes</h3>
+    <h3 id="menu">Menu</h3>
+    
+
+    <script>
+        let restaurantId = document.location.pathname.split('/').splice(-1);
+
+        fetch('/api/' + id + '.json')
+            .then((response) => response.json())
+            .then(fillRestaurant)
+
+            function fillRestaurant(restaurant) {
+                document.getElementById('name').textContent = restaurant.name;
+                document.getElementById('hours').textContent = restaurant.hours;
+                document.getElementById('address').textContent = restaurant.address;
+                document.getElementById('phone').textContent = restaurant.phone;
+                document.getElementById('notes').textContent = restaurant.notes;
+            }
+            // trying to format the page to look cute... didn't really change anything... 
+    </script>
+
+</body>
+</html>

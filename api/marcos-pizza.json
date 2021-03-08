@@ -1,0 +1,14 @@
+
+{
+    "id": "marcos-pizza",
+    "name": "Marco's Coalfired",
+    "address": "2129 Larimer Street",
+    "phone": "(303)296-7000",
+    "hours":[
+        "Sun-Thurs 11am-9pm",
+        "Fri-Sat 11am-10pm"
+    ],
+    "notes":"Mondays and Tuesdays, Margherita Pizzas are 50% off!",
+    "latitude": "39.754435",
+    "longitude": "-104.990933"
+}

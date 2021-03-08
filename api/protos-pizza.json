@@ -1,0 +1,14 @@
+{
+    "id": "protos-pizza",
+    "name":"Proto's Pizza",
+    "address": "2401 15th St",
+    "phone": "(720)855-9400",
+    "hours": [
+        "Sun-Thurs: 11am-8:30pm",
+        "Fri-Sat: 11am-9pm"
+    ],
+    "notes":
+        "Has won 'Best Pizza' and 'Best Cannoli' regularly",
+    "latitude": "39.75685",
+    "longitude": "-105.023621"
+}
