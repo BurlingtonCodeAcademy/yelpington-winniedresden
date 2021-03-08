@@ -38,3 +38,5 @@ function Restaurant(props) {
     );
   }
   export default Restaurant;
+
+  //this page will return all the data from the restaurant json files and present it on the page for each spot. 

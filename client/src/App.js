@@ -1,20 +1,17 @@
 import React from 'react';
-import Restaurant from './components./Restaurant';
-import NotFound from './components./NotFound';
+import Restaurant from './components/Restaurant';
+import NotFound from './components/NotFound';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './App.css';
-import Map from './components./Map';
-import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
-
-import L from "leaflet";
-import Nav from './components./Nav';
+import Map from './components/Map';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Nav from './components/Nav';
 
 
-
+//this is the homepage functionality. will show the map on the homepage and then nav bar, which allows user to click any of the restaurants and go directly to their pages. user could also type in restaurants/restaurant-id in the URL to get to a specific restaurant 
 
 function App() {
 

@@ -6,6 +6,7 @@ import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
+//importing the default icon for the map marker 
 let DefaultIcon = L.icon({
     iconUrl: icon,
     shadowUrl: iconShadow
@@ -17,7 +18,7 @@ function Map() {
     
   return (
     <div style ={{float: "left"}}>
-        
+        {/* the center of the main map I set manually */}
       <MapContainer className="map"
         center={[39.743670, -104.995550]}
         zoom={13}
@@ -58,3 +59,4 @@ function Map() {
 }
 export default Map;
 
+//this map will load on the homepage and each restaurant is clickable from its popup.

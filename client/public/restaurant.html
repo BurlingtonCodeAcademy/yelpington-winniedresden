@@ -7,13 +7,14 @@
     <title>A Restaurant</title>
 </head>
 <body>
+    <div id="body">
     <h4 id="name">Restaurant name</h4>
-    <h5>Hours:</h5><h5 id="hours">hours</h5>
+    <h5>Hours:<span id="hours">hours</span></h5>
     <h4 id="address">Address</h4>
     <h3 id="phone">phone number</h3>
     <h3 id="notes">Notes</h3>
     <h3 id="menu">Menu</h3>
-    
+    </div>
 
     <script>
         let restaurantId = document.location.pathname.split('/').splice(-1);
@@ -29,7 +30,7 @@
                 document.getElementById('phone').textContent = restaurant.phone;
                 document.getElementById('notes').textContent = restaurant.notes;
             }
-            // trying to format the page to look cute... didn't really change anything... 
+            // to populate each section of the page with the proper data/ text  
     </script>
 
 </body>
