@@ -6,6 +6,7 @@
     "phone": "(720)456-7666",
     "hours":"12pm -9pm",
     "notes": "The best pizza is the Brooklyn Bridge.",
-    "latitude": "39.762032",
-    "longitude": "-105.038834"
+    "latitude": 39.762032,
+    "longitude": -105.038834
+    
 }

@@ -2,17 +2,21 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet";
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
-//importing the default icon for the map marker 
-let DefaultIcon = L.icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow
+//changing the icon on the map to be pizza slices 
+let pizzaIcon = L.icon({
+  iconUrl: 'pizzaIcon.png',
+
+  iconSize:     [38, 50], 
+  shadowSize:   [50, 64], 
+  iconAnchor:   [22, 94], 
+  shadowAnchor: [4, 62],  
+  popupAnchor:  [-3, -76] 
 });
 
-L.Marker.prototype.options.icon = DefaultIcon;
+
+L.Marker.prototype.options.icon = pizzaIcon;
 
 function Map() {
     
@@ -20,13 +24,14 @@ function Map() {
     <div style ={{float: "left"}}>
         {/* the center of the main map I set manually */}
       <MapContainer className="map"
-        center={[39.743670, -104.995550]}
+        // center={[39.743670, -104.995550]}
+        center={[39.75833, -104.99667]}
         zoom={13}
         scrollWheelZoom={true}
         
       >
         <TileLayer
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+          url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
             <Marker position={[39.743546, -104.969523]}>
@@ -60,3 +65,8 @@ function Map() {
 export default Map;
 
 //this map will load on the homepage and each restaurant is clickable from its popup.
+
+// var OpenStreetMap_Mapnik = L.tileLayer(, {
+// 	maxZoom: 19,
+// 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// });
