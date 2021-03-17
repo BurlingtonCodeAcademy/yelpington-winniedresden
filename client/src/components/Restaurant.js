@@ -21,7 +21,7 @@ let pizzaIcon = L.icon({
 });
 
 
-L.Marker.prototype.options.icon = pizzaIcon;
+//L.Marker.prototype.options.icon = pizzaIcon;
 
 function Restaurant(props) {
   const [restaurant, setRestaurant] = useState({
@@ -84,7 +84,7 @@ findLong();
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
         />
-        <Marker position={[restaurant.latitude, restaurant.longitude]}/> 
+        <Marker position={[restaurant.latitude, restaurant.longitude]} icon={pizzaIcon}/> 
         {/* <Marker position={[39.743670, -104.995550]}/> */}
       </MapContainer>
     </div>

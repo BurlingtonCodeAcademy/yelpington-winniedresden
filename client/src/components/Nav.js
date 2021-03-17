@@ -26,7 +26,7 @@ function Nav(props) {
                 console.log(id);
                 return (
                   <h3 key={index}>
-                    <Link to={`/restaurants/${id}`}>
+                    <Link to={`/restaurants/${id}`}style={{textDecoration: "none", color: "red"}}>
                       {id.replaceAll("-", " ")}
                     </Link>
                   </h3>
