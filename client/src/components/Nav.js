@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import '../App.css'; 
+import '../index.css';
+
 function Nav(props) {
   const [rest, setRest] = useState([]);
   useEffect(() => {
@@ -19,7 +20,6 @@ function Nav(props) {
     <div id="nav" style={{float: "right", marginRight: "100px"}}>
       <ul>
         <div>
-          <h2></h2>
           {/* if the restaurant length isn't 0, then fetch its name and fill that in the list */}
           {rest.length !== 0
             ? rest.map((id, index) => {
@@ -28,6 +28,7 @@ function Nav(props) {
                   <h3 key={index}>
                     <Link to={`/restaurants/${id}`}style={{textDecoration: "none", color: "red"}}>
                       {id.replaceAll("-", " ")}
+                      {/* changing the names in the list to the ids, but removing the - to format them nicer  */}
                     </Link>
                   </h3>
                 );

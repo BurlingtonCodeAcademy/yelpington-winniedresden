@@ -1,11 +1,6 @@
 import React from 'react';
 import Restaurant from './components/Restaurant';
-import NotFound from './components/NotFound';
-import ReactDOM from 'react-dom';
 import './index.css';
-import './App.css';
-import reportWebVitals from './reportWebVitals';
-import './App.css';
 import Map from './components/Map';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Nav from './components/Nav';

@@ -1,13 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import "../App.css";
-//import '../public/index.css';
+import '../index.css';
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import pizza from '../images/pizzaIcon.png';
-
-//import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 //setting up what the marker will look like on the map (wont show even when i use blue marker)
 let pizzaIcon = L.icon({
@@ -19,10 +16,7 @@ let pizzaIcon = L.icon({
   shadowAnchor: [4, 62],  
   popupAnchor:  [-3, -76] 
 });
-
-
-//L.Marker.prototype.options.icon = pizzaIcon;
-
+//setting which restaurant is on the page and the details of that restaurant.
 function Restaurant(props) {
   const [restaurant, setRestaurant] = useState({
     id: "",
@@ -46,24 +40,23 @@ function Restaurant(props) {
         });
     }
   });
+  //function to turn latitude into a number (instead of string)
 async function findLat(){
   let lat = parseFloat(restaurant.latitude)
   console.log(lat)
-  console.log(restaurant.latitude)
 }
 findLat();
-
+//function to turn longitude into a number (instead of string)
 async function findLong(){
   let long = parseFloat(restaurant.longitude);
   console.log(long)
-  
 }
 findLong();
 
 
   return (
     <div>
-      
+      {/* inserts restaurant info for each rest. */}
       <h1>{restaurant.name}</h1>
       Address: <h3>{restaurant.address}</h3>
       Phone number: <h3>{restaurant.phone}</h3>

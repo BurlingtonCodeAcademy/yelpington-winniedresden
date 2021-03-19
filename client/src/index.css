@@ -1,4 +1,6 @@
+/*font for all pages */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 /* setting up styling for the homepage  */
 body {
   margin: 30px;
@@ -8,13 +10,26 @@ body {
   text-decoration: none;
   color: red;
 }
-
-code {
-  font-family:  'Righteous', cursive;
-}
+/* styling for the homepage map */
 .map {
   margin-left: 20px;
   width: 100vh;
   height: 70vh;
 }
-
+/* styling for the homepage title  */
+h1{
+    text-align: center;
+    color: crimson;
+    font-size: 45px;
+    text-shadow: 2px 2px burlywood;
+}
+/* styling for the links/ visited pages on the homepage */
+:visited{
+    color: crimson;
+    text-decoration: none;
+}
+:link{
+    text-decoration: none;
+    font-size: 35px;
+}
+  

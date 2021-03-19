@@ -2,7 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import L from "leaflet";
-import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import pizza from '../images/pizzaIcon.png';
 
 //changing the icon on the map to be pizza slices 
@@ -17,8 +17,6 @@ let pizzaIcon = L.icon({
 });
 
 
-//L.Marker.prototype.options.icon = pizzaIcon;
-
 function Map() {
     
   return (
@@ -31,6 +29,7 @@ function Map() {
         scrollWheelZoom={true}
         
       >
+        {/* marking each marker on the map with a pizza icon & popup */}
         <TileLayer
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
           attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
@@ -66,8 +65,3 @@ function Map() {
 export default Map;
 
 //this map will load on the homepage and each restaurant is clickable from its popup.
-
-// var OpenStreetMap_Mapnik = L.tileLayer(, {
-// 	maxZoom: 19,
-// 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// });
