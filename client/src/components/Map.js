@@ -23,7 +23,6 @@ function Map() {
     <div style ={{float: "left"}}>
         {/* the center of the main map I set manually */}
       <MapContainer className="map"
-        // center={[39.743670, -104.995550]}
         center={[39.75833, -104.99667]}
         zoom={13}
         scrollWheelZoom={true}
